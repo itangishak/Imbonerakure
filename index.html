@@ -6,7 +6,49 @@
     <title>Website Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+           #carouselExampleDark .carousel-inner .carousel-item {
     
+                height: 800px;
+                margin-top: 5vh;
+            }
+          #myMargin-2,#myMargin-3,#myMargin-4,#myMargin-1{
+            margin-top: 20px;
+          }
+          ul{
+            margin:20px;
+          }
+          ul li{
+        
+           text-align: left;
+           list-style-type: decimal;
+           padding: 3px;
+          }
+          .footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+          margin-bottom: 90px;
+        }
+            @media (max-width: 768px) {
+              #carouselExampleDark .carousel-inner .carousel-item {
+                      
+                      height: 340px;
+                      margin-top: 5vh;
+                  }
+                .carousel-caption{
+                  padding-bottom: 5px;
+
+                }
+              
+              
+              }
     </style>
 </head>
 <body>
@@ -46,32 +88,34 @@
       </nav>
 
 
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./cddfdd.png" class="d-block w-100" alt="...">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="./images/cddfdd.png" class="d-block w-100" alt="...">
             <div class="carousel-caption  d-md-block">
               <h5>Ibikorwa Ego,ubunebwe oya</h5>
               
               <p>Imbonerakure shirira</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./cddfdd2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption  d-md-block">
-              <h5></h5>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./images/cddfdd2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block text-success">
+              <h5>Imbonerakure dugimisozi</h5>
+              <p>Twaratse</p>
               
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./cddfdd.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5></h5>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./images/cddfdd.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Ibikorwa Ego,ubunebwe oya</h5>
+              
               <p>Imbonerakure shirira</p>
             </div>
           </div>
@@ -86,9 +130,121 @@
         </button>
       </div>
 
+      <div class="container text-center ">
+        <div class="row mt-4"><div class="col-12"><h1>Cadre stratégique des Imbonerakure</h1></div></div>
+        <div class="row" >
+          <div id="myMargin-1" class=".col-sm-12 col-md-6 ">
 
+                <div class="card" style="width: 100%;">
+                  <img src="./images/mission.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mission</h5>
+                    <p class="card-text text-start px-4 pb-4">
+                      L'Imbonerakure s'engage à galvaniser la jeunesse du Burundi pour être à l'avant-garde du voyage de la nation vers la prospérité socio-économique. Notre mission est de canaliser la vigueur, la créativité et le dévouement de nos membres dans des activités et des initiatives constructives qui soutiennent les objectifs de développement national. En cultivant un sens des responsabilités, du leadership et de la fierté civique, nous visons à autonomiser les jeunes pour qu'ils contribuent de manière significative à l'ambition du Burundi de devenir un pays émergent d'ici 2040 et une nation développée d'ici 2060. À travers l'éducation, l'entrepreneuriat et l'engagement communautaire, nous nous efforçons de jeter des bases solides pour un avenir qui est dynamique, durable et reflète notre riche héritage culturel.
+                    </p>
+                  </div>
 
-
+            </div>
+          </div>
+          <div id="myMargin-2" class=".col-sm-12 col-md-6 ">
+                <div class="card" style="width: 100%;">
+                  <img src="./images/vision.png" class="card-img-top" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">Vision</h5>
+                    <p class="card-text text-start px-4">Notre vision est celle d'un Burundi transformé par le dynamisme et l'esprit innovant de sa jeunesse, un pays où les rêves et les aspirations de la jeune génération sont entrelacés avec le tissu national. Nous envisageons un avenir où le Burundi se tient fièrement sur la scène mondiale comme un témoignage de résilience, de progrès et d'unité. D'ici 2040, nous voyons une nation qui a émergé de l'ombre de ses défis, avec une économie robuste, des systèmes sociaux équitables et un paysage culturel florissant. En progressant vers 2060, notre vision est celle d'un Burundi qui a atteint le statut de nation développée, où chaque citoyen jouit des fruits de la prospérité, de la paix et de la stabilité. Dans cet avenir, l'Imbonerakure est une force motrice, un phare d'espoir et un catalyseur du changement, incarnant les aspirations d'une nation et le potentiel illimité de sa jeunesse.</p>
+                  </div>
+                </div>
+          </div>
+          <div id="myMargin-3" class=".col-sm-12 col-md-6 ">
+                <div class="card" style="width: 100%;">
+                  <img src="./images/objects.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Objectifs </h5>
+                    <p class="card-text pb-3">
+                      <ul class="list-group">
+                        <li>
+                          
+                         Cultiver un sentiment de fierté nationale et de responsabilité civique parmi les jeunes.
+                         
+                        </li>
+                        <li>
+                         
+                          Promouvoir les opportunités éducatives et entrepreneuriales pour les jeunes, les préparant à être les leaders de demain.
+                         
+                        </li>
+                        <li>
+                         
+                       Soutenir les programmes de développement du gouvernement par une participation et des initiatives actives de la jeunesse.
+                         
+                        </li>
+                        <li>
+                       
+                         Cultiver une culture de l'innovation et de la résolution de problèmes parmi la population jeune.
+                         
+                        </li>
+                        <li>
+                       
+                         Plaider pour des politiques et des pratiques qui sécurisent un avenir durable et équitable pour tous les Burundais.
+                         
+                        </li>
+                      
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+          </div>
+          <div id="myMargin-4" class=".col-sm-12 col-md-6 ">
+            <div class="card" style="width:100%;">
+              <img src="./images/valuers.jpg" class="card-img-top" alt="..." height="400px">
+              <div class="card-body">
+                <h5 class="card-title">Valeurs Fondamentales</h5>
+                <p class="card-text">
+                  <ul class="list-group">
+                    <li>
+                      
+                      <b>Vision : </b>Maintenir une perspective et une prévoyance à long terme dans toutes les entreprises.
+                     
+                    </li>
+                    <li>
+                     
+                      <b>Patriotisme :</b> Cultiver l'amour, le respect et le dévouement envers la nation.
+                     
+                    </li>
+                    <li>
+                     
+                      <b>Unité :</b> Embrasser l'inclusivité et la collaboration parmi tous les jeunes, indépendamment de leur origine.
+                     
+                    </li>
+                    <li>
+                   
+                      <b>Intégrité : </b>Maintenir l'honnêteté, la transparence et une conduite éthique dans toutes les actions.
+                     
+                    </li>
+                    <li>
+                   
+                      <b> Résilience :</b> Démontrer la détermination et l'adaptabilité face aux défis.
+                     
+                    </li>
+                    <li>
+                   
+                      <b>Innovation :</b> Encourager la créativité et l'amélioration continue pour le bien-être de la société.
+                     
+                    </li>
+                 
+                  
+                  </ul>
+                </p>
+              </div>
+            </div>
+      </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Imbonerakure.  Tous droits réservés.</p>
+    </footer>
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

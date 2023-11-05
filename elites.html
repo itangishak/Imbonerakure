@@ -5,8 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
+    <script>
+           
+           
+
+      function showModal(){
+
     
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+      }
+      window.addEventListener('load', function() {
+        showModal();
+      });
+
+</script>
+    
+    
+    <style>
+      /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+p{
+  color: black;
+}
+.footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -44,9 +132,29 @@
           </div>
         </div>
       </nav>
+       <!-- code for modal -->
+     
+    
+        <!-- Button trigger modal -->
 
-      <iframe src="https://script.google.com/macros/s/AKfycbztw5Pg9v1OCe4Vt96eaVb7EpQNAe7hL1PMdG_W5AkU0KNT9gSUNou_JYKEB_HKLiQU1A/exec" frameborder="0" width="100%" height="900px"></iframe>
 
+   
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+      
+      <iframe src="https://script.google.com/macros/s/AKfycbztw5Pg9v1OCe4Vt96eaVb7EpQNAe7hL1PMdG_W5AkU0KNT9gSUNou_JYKEB_HKLiQU1A/exec" frameborder="0" style="margin-top: 30px;" width="100%" height="900px"></iframe>
+      <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Imbonerakure.  Tous droits réservés.</p>
+    </footer>
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
