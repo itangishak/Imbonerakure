@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+           
+           document.addEventListener("DOMContentLoaded", function() {
+              var iframe = document.getElementById('iframe');
+              var loadingDiv = document.getElementById('loading');
+
+              // When the iframe starts loading, show the loading indicator
+              iframe.addEventListener('loadstart', function() {
+                loadingDiv.style.display = 'block';
+              });
+
+              // When the iframe finishes loading, hide the loading indicator
+              iframe.addEventListener('load', function() {
+                loadingDiv.style.display = 'none';
+              });
+            });
+
+            function hideLoadingIndicator() {
+              document.getElementById('loading').style.display = 'none';
+            }  
+
+   </script>
+    
+    
+    <style>
+         
+      .footer {
+                  background-color: #f2f2f2;
+                  text-align: center;
+                  padding: 10px;
+                  position: fixed;
+                  left: 0;
+                  bottom: 0;
+                  width: 100%;
+                  font-family: Arial, sans-serif;
+              }
+      .loading {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        #iframe{
+          margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            
+          #iframe{
+          margin-top: -10px;
+        }
+              
+              }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IMBONERAKURE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Imbonerakure</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Acceuil</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Formulaire
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Elites</a></li>
+                    <li><a class="dropdown-item" href="#">Dirigeants</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+      <div id="loading" class="loading">
+
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <iframe id="iframe"  src="https://script.google.com/macros/s/AKfycbyMPsy0sCHzxcHCYP2ME4JY8mZGEomK3cB8t_5Pf0ndvgha1uHh1PLeT8Yc3Nbo5XFa/exec" frameborder="0" width="100%" height="900px" onload="hideLoadingIndicator()"></iframe>
+      <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Imbonerakure.  Tous droits réservés.</p>
+    </footer>
+    <script>
+              document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
